@@ -1,0 +1,68 @@
+.registerPage {
+  flex: 1;
+  background-image: linear-gradient(rgba(2, 51, 66, 0.7), hsla(202, 91%, 17%, 0.7)), url('../../assets//image/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: auto;
+}
+
+.registerCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-radius: 4px;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+}
+
+.btns-anima {
+  padding: 12px 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #02416b;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .8;
+  }
+}
+
+.registerPage h1 {
+  margin: 0;
+  color: #02416b;
+  text-align: center;
+  font-weight: bold;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.link-item {
+  text-decoration: none;
+}
+
+.error-msg {
+  color: rgb(236, 69, 69);
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
