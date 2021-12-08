@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Register } from '../../pages';
+import { Register, Login } from '../../pages';
 
 const Navigation = () => {
   return (
@@ -8,6 +8,7 @@ const Navigation = () => {
       <div className="app">
         <Routes>
           <Route path="/" element={<Register/>}/>
+          <Route path="login" element={<Login/>}/>
         </Routes>
       </div>
     </Router>
