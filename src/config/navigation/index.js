@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Register, Login, MemberList, AddMember } from '../../pages';
+import { Register, Login, MemberList, AddMember, MemberDetail } from '../../pages';
 
 const Navigation = () => {
   return (
@@ -11,6 +11,7 @@ const Navigation = () => {
           <Route path="login" element={<Login/>}/>
           <Route path="member-list" element={<MemberList/>}/>
           <Route path="add-member" element={<AddMember/>}/>
+          <Route path="member-detail/:id" element={<MemberDetail/>}/>
         </Routes>
       </div>
     </Router>

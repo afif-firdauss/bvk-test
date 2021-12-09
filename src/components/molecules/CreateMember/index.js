@@ -13,31 +13,31 @@ const CreateMember = () => {
 
   return (
     <>
-    <div className={`${styles.container} "py-4"`}>
-      <UploadPicture/>
-      <Input
-        label="Name"
-        placeholder="ex: John Doe"
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <Dropdown 
-        label="Position"
-        options={["President", "CEO", "CTO", "Senior Developer", "Junior Developer", "Intern"]}
-      />
-      <Dropdown 
-        label="Report To"
-        options={["President", "CEO", "CTO", "Senior Developer", "Junior Developer", "Intern"]}
-      />
-      <Gap height={25}/>
-      <Button title="Add Member" type="submit" onClick={() => setModalShow(true)}/>
-    </div>
+      <div className={`${styles.container} "py-4"`}>
+        <UploadPicture/>
+        <Input
+          label="Name"
+          placeholder="ex: John Doe"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <Dropdown 
+          label="Position"
+          options={["President", "CEO", "CTO", "Senior Developer", "Junior Developer", "Intern"]}
+        />
+        <Dropdown 
+          label="Report To"
+          options={["President", "CEO", "CTO", "Senior Developer", "Junior Developer", "Intern"]}
+        />
+        <Gap height={25}/>
+        <Button title="Add Member" type="submit" onClick={() => setModalShow(true)}/>
+      </div>
 
-    <ModalSuccess
-      show={modalShow}
-      onHide={() => setModalShow(false)}
-    />
+      <ModalSuccess
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </>
   )
 }
