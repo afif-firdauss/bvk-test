@@ -12,13 +12,13 @@
 .input input {
   padding: 10px;
   border: 1px solid #02416b;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .input input:focus,
 .input input:active {
   outline: none;
-  border: 2px solid #02416b;
+  border: 1px solid #02416b;
 }
 
 .input input::placeholder {
