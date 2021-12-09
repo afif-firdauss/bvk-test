@@ -3,6 +3,7 @@
   top: 0;
   width: 100%;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+  padding: 10px 0;
 }
 
 .navbar img {
@@ -51,7 +52,7 @@
   color: white;
 }
 
-.header-btn {
+.navbarBtn {
   padding: 5px 20px;
   border-radius: 5px;
   border: 2px solid white;
@@ -62,7 +63,7 @@
   font-weight: bold;
 }
 
-.header-btn:hover {
+.navbarBtn:hover {
   background-color: rgb(255, 255, 255);
   color: #02416b;
 }
